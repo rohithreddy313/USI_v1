@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate') %> 
+<link rel="stylesheet" href="stylesheets/show.css">
+
+<div class="container my-5 " >
+    <div class="row d-flex justify-content-center" >
+        <div class="col-md-7">
+            <div class="card p-2 text-center " style="border-color: #06173D;background-size: cover;" >
+                <div class="row">                   
+                    <div class="col-md-7 border-right no-gutters">                       
+                        <div class="py-3"><img src="https://source.unsplash.com/collection/1475825/person" width="150" style="border-radius: 5px;" class="mt-3">
+                            <h4 ><%=student.username%> </h4>
+                            <div class="allergy"><span><%=student.course%> </span></div>
+                            <div class="stats mt-5">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">DOB</span> <span class="text-left bottom">03/12/2001</span> </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">Age</span> <span class="text-left bottom">18Y </span> </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">Weight</span> <span class="text-left bottom">168 lb</span> </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">Height</span> <span class="text-left bottom">5'9"</span> </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">Attendance</span> <span class="text-left bottom"><%=student.attendance%>% </span> </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="text-left head">Tution Fees</span> <span class="text-left bottom"><%=student.tution%> </span> </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="py-3 my-5">
+                            <div> <span class="d-block head">Home Address</span> <span class="bottom">123 Broadway,New York,NY,10012</span> </div>
+                            <div class="mt-4"> <span class="d-block head">Mobile Phone#</span> <span class="bottom">917 (543)-1234</span> </div>
+                            <div class="mt-4"> <span class="d-block head">Home Phone#</span> <span class="bottom">212 (213)-1234</span> </div>
+                            <div class="mt-4"> <span class="d-block head">Work Phone#</span> <span class="bottom">718 (702)-9876</span> </div>
+                            <div class="mt-4"> <span class="d-block head">Email</span> <span class="bottom"><%=student.email%> </span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

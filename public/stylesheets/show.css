@@ -1,0 +1,32 @@
+h4{
+    font-size: 50px;
+    font-weight: 100px; 
+    text-transform: uppercase; 
+    color: #002145;
+    letter-spacing: .9px;
+}
+
+.head{
+    color: black;
+    letter-spacing: .7px;
+}
+
+.col-md-5{
+    border-left: 1px solid #002145;
+  height: 500px;
+}
+
+.allergy{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+}
+
+.card{
+    background-image: linear-gradient(transparent 40%,rgba(255, 255, 255, 0.8) 70%),url('./u.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

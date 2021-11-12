@@ -1,0 +1,100 @@
+<% layout('layouts/boilerplate.ejs') %> 
+
+
+<form  action='/application' class="needs-validation" method='POST' novalidate>
+    <div class="ui form">
+    <h4 class="ui dividing header">Candidate Information</h4>
+    <div class="field">
+      <label class="form-label">Full Name</label>
+      <div class="two fields">
+        <div class="field">
+          <input type="text" class='form-control' name="first" placeholder="First Name" required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+        <div class="field">
+          <input type="text" name="last" class="form-control" placeholder="Last Name" required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      
+      <div class="two fields"> 
+        <div class="four wide field">
+            <label for="mother" class="form-label">Mother's Name</label>
+          <input type="text" name="mother" class="form-control" id="mother" placeholder="Mother's Name" required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+        <div class="four wide field">
+            <label for="father" class="form-label">Father's Name</label>
+          <input type="text" name="father" class="form-control" id="father" placeholder="Father's Name" required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="form-label">Permanent Address</label>
+      <div class="fields">
+        <div class="twelve wide field">
+          <input type="text" name="street" class="form-control" placeholder="Street Address" required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+        <div class="four wide field">
+          <input type="text" name="house" class="form-control" placeholder="House No." required>
+        </div>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+    </div>
+    <div class="two fields">
+      <div class="field">
+        <label for="state" class="form-label">State</label>
+        <input type='text' id="state" class="form-control" name="state" placeholder="State" required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="field">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" name="country" class="form-control" id="country" placeholder="Country" required> 
+        <div class="valid-feedback">
+            Looks good!
+          </div>       
+      </div>
+    </div>
+    <h4 class="ui dividing header">Personal Information</h4>
+    <div class="fields">
+      <div class="seven wide field">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="text" name="email" class="form-control"  placeholder="email" required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="three wide field">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="number" name="phone" class="form-control"  placeholder="phone" required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="four wide field">
+        <label for="course" class="form-label">Course Intrested</label>
+        <input type="text" name="course" class="form-control"  placeholder="course" required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+    </div>
+    <button class="ui button" type='Submit' >Submit</button>
+</div>
+  </form>

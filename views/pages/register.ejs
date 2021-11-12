@@ -1,0 +1,27 @@
+<% layout('layouts/boilerplate.ejs')%> 
+
+<div class="mx-auto container ui placeholder mb-5 px-5 py-5" style="width: 300px;border-radius: 10px;">
+    <form action="/register" method="POST">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" name="username" id="username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="course" class="form-label">Course Interested</label>
+            <input type="text" class="form-control" name="course" id="course">
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-block" style="background-color: #173d74;color: aliceblue;">Submit</button>
+          </div>
+          
+    </form>
+</div>

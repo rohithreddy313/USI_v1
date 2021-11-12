@@ -1,0 +1,36 @@
+<link href="/stylesheets/navbar.css" rel="stylesheet">
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark py-0 " style="background-color: #173d74;">
+    <div class="container-fluid ms-5 py-0">
+        <img src="/stylesheets/copy.png" type="text/css" style="width: 70px;height: 70px;"alt="">
+        <a class="navbar-brand" href="/" style="font-family: 'Montserrat', sans-serif;" id="brand">THE UNIVERSITY OF SOUTH INDIA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
+        <!-- <div class="navbar-nav d-flex ms-4">
+            <a class="nav-link active mt-0" href="/">Home</a>
+        </div> -->
+        <div class="navbar-nav d-flex ms-5">
+            <a class="nav-link active" href="/course">Courses</a>
+        </div>
+        <div class="navbar-nav d-flex ms-5">
+            <a class="nav-link active" href="/campus">Campus Life</a>
+        </div>
+        <div class="navbar-nav d-flex ms-5">
+            <a class="nav-link active" href="/application">Apply for UG</a>
+        </div>
+        <div class="navbar-nav ">
+          <% if(!currentUser) {%>
+          <a class="nav-link active ms-5" href="/login">Student Login</a>
+          <a class="nav-link active ms-5" href="/register">Register</a>
+          <% } else {%>
+          <a class="nav-link active ms-5" href="/show"><i class="user outline icon"></i><%=currentUser.username%> </a>
+          <a class="nav-link active ms-5" href="/logout">Logout</a>
+          <% } %>
+      </div>
+        </div>
+      </div>
+    </div>
+  </nav>

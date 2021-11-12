@@ -1,0 +1,28 @@
+h2{
+    color: #002145;
+    letter-spacing: 1px;
+}
+
+.card h5{
+
+        color: #002145;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+
+}
+
+.card p{
+
+        font-size: medium;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+
+}
+
+hr{
+    color: #002145;
+}
+
+.events{
+    background-color: #e9ecef;
+}

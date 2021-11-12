@@ -1,0 +1,80 @@
+.two p{
+    font-size: medium;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+        line-height: 25px;
+
+}
+
+.two h3{
+    color: #002145;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 400;
+    color: #6829c2 !important;
+
+}
+
+.three h2{
+    line-height: 40px;
+    font-weight: 400;
+    color: #6829c2 !important;
+}
+
+.three p{
+    font-size: large;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+        line-height: 30px;
+
+}
+
+.three{
+    background-color: #E9DFF8;
+}
+
+.four .col-3{
+    border: #E9DFF8 1px solid;
+    background-color:#E9DFF8 ;
+    cursor: pointer;
+}
+
+.four h2{
+    line-height: 40px;
+    font-weight: 400;
+    color: #6829c2 !important;
+} 
+
+.four p{
+    font-size: medium;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+        line-height: 30px;
+}
+.eve h2{
+    line-height: 40px;
+    font-weight: 400;
+    color: #6829c2 !important;
+}
+
+.eve p{
+    font-size: medium;
+        letter-spacing: 0.7px;
+        cursor: pointer;
+        line-height: 30px;
+}
+
+.eve .row:hover{
+    background-color:#E9DFF8 ;
+}
+
+.eve img{
+    margin-left: 38px;
+}

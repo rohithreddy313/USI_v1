@@ -1,0 +1,35 @@
+h2{
+    color: #002145;
+    letter-spacing: 1px;
+}
+
+.col-4 p{
+    font-size: medium;
+    color: #002145;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+
+.col-8 p{
+    letter-spacing: 0.7px;
+}
+
+.mb-4{
+    color: #002145;
+    letter-spacing: 0.7px;
+}
+
+.accordion-button{
+    color: #002145;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+
+h3{
+    letter-spacing: .7px;
+}
+
+a{
+    color: #002145;
+    letter-spacing: 0.7px;  
+}

@@ -1,0 +1,67 @@
+alert.blue {
+    background: #c3d0db;
+    border: 1px solid #98b2c3;
+    width: auto;
+}
+
+.alert {
+    background: #fff;
+    border: 1px solid #3894bc;
+    padding: 25px;
+    width: auto
+}
+
+.alert {
+    color: #002145;
+    background-color: #c3d0db;
+    border: 1px solid #98b2c3;
+    text-shadow: none;
+    width: auto
+}
+
+span{
+    color: #002145;
+    font-weight: bold;
+}
+
+#welcome{
+    background-image: linear-gradient(transparent 40%,rgba(0,33,69,.8) 70%),url('https://images.unsplash.com/photo-1562774053-701939374585?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1064&q=80');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 2px;
+    color: aliceblue;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 200px;
+    border: 1px solid white;
+}
+#welcome:hover{
+    background-image: linear-gradient(transparent 10%,rgba(0,33,69,.8) 70%),url('https://images.unsplash.com/photo-1562774053-701939374585?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1064&q=80');
+}
+
+#news{
+    color: #002145;
+    letter-spacing: 2px;
+    text-decoration: underline #002145;
+    margin-bottom: 10px;
+    text-underline-offset: 8px;
+}
+
+
+.card-title{
+    font-weight: lighter;
+    font-size: 25px;
+    color: #002145;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.card-title:hover{
+    text-decoration: underline #002145;
+}
+
+.card-text{
+    font-size: 17px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of South India</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/stylesheets/home.css" rel="stylesheet">
+    <link href="/stylesheets/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/athletics.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark py-0 " style="background-color: #8F1515;">
+        <div class="container-fluid ms-5 py-0">
+            <!-- <img src="/stylesheets/copy.png" type="text/css" style="width: 70px;height: 70px;"alt=""> -->
+            <a class="navbar-brand my-4" href="/" style="font-family: 'Montserrat', sans-serif;" id="brand">THE UNIVERSITY OF SOUTH INDIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse py-0" id="navbarSupportedContent">
+            <!-- <div class="navbar-nav d-flex ms-4">
+                <a class="nav-link active mt-0" href="/">Home</a>
+            </div> -->
+            <div class="navbar-nav d-flex ms-5">
+                <a class="nav-link active" href="/course">Courses</a>
+            </div>
+            <div class="navbar-nav d-flex ms-5">
+                <a class="nav-link active" href="/campus">Campus Life</a>
+            </div>
+            <div class="navbar-nav d-flex ms-5">
+                <a class="nav-link active" href="/application">Apply for UG</a>
+            </div>
+            <div class="navbar-nav ">
+              <% if(!currentUser) {%>
+              <a class="nav-link active ms-5" href="/login">Student Login</a>
+              <a class="nav-link active ms-5" href="/register">Register</a>
+              <% } else {%>
+              <a class="nav-link active ms-5" href="/show"><i class="user outline icon"></i><%=currentUser.username%> </a>
+              <a class="nav-link active ms-5" href="/logout">Logout</a>
+              <% } %>
+          </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+         
+
+    <div class="container my-5">
+        <img style="width: 1300px; height: 500px;" class='img'src="https://images.unsplash.com/photo-1485400031595-976c74cf4e25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+        <div class="art">
+            <div class="row one">
+                <div class="col-3"></div>
+                <div class="col-9 mt-3">
+                    <h1 >Experience USI Athletics Closer</h1>
+                </div>
+                <div class="row two">
+                    <div class="col-3"></div>
+                    <div class="col-6 mt-5">
+                        <h3>Immerse yourself in nationally recognized athletics and showcase your talent in national sports with other universities in Canada.</h3>
+                    <p class="mt-3">The UBC Arts and Culture District educates and showcases student creatives and scholars, presents world-renowned performers, and is home to innovative public programs and international exhibitions. We also offer an annual Artivism Festival and International Women’s Day event.
+                        We hold the creative and performing arts as core to deep disciplinary knowledge and applied research, and as the key to a fulfilled and connected life.</p>
+                    </div>
+                </div>    
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="news">
+                <h2 class="mt-5">Featured News</h2><hr>
+                <div class="row three mt-3 me-3">
+                    <div class="col-7">
+                        <img style=" width: 500px; height: 300px;"  src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                    <div class="col-4 mt-4">
+                        <h2>T-Birds Basketball coach named the coach of the year.</h2>
+                        <p>Welcome to a new school year! Don’t miss a string of exciting virtual and in-person activities happening this September: from first-week events like cooking classes, walking tours, and art exhibitions, there’s something for everyone.</p>
+                    </div>
+                </div>
+                <div class="row four mt-5">
+                    <div class="col-3">
+                        <div class="card" >
+                            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Marathon Go!</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Check it</a>
+                            </div>
+                        </div>
+                        <div class="mb-5"></div>
+                    </div><div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1611374243147-44a702c2d44c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Attention Golfers!</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Check it</a>
+                            </div>
+                        </div>
+                    </div><div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="card" >
+                            <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Any swimmers?</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-danger">Check it</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <h2 class="mt-5">Upcoming Events</h2><hr>
+            <div class="eve ">
+                <div class="row  mt-5 ">
+                    <div class="col-7 ">
+                        <h2 class="mt-3">Women’s Rugby Match</h2>
+                        <p>Wednesday December 9, 2020 - Friday December 31, 2021 </p>
+                    </div>
+                    <div class="col-5">
+                        <img style=" width: 500px; height: 300px;" src="https://images.unsplash.com/photo-1450121982620-84a745035fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1270&q=80" alt="">
+                    </div>
+                </div><hr>
+                <div class="row  mt-5 ">
+                    <div class="col-7 ">
+                        <h2 class="mt-3">Men's Football</h2>
+                        <p>Sound House: Never Forgotten </p>
+                        <p>September 30,2021| 7:30</p>
+                    </div>
+                    <div class="col-5">
+                        <img style=" width: 500px; height: 300px;"  src="https://images.unsplash.com/photo-1485313260896-6e6edf486858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                </div><hr>
+                <div class="row  mt-5 ">
+                    <div class="col-7">
+                        <h2 class="mt-3">Men's Basketball</h2>
+                        <p>QUEER Coded: Slam + Spoken Word</p>
+                        <p>Wednesday December 9, 2020 - Friday December 31, 2021 </p>
+                    </div>
+                    <div class="col-5">
+                        <img style=" width: 500px; height: 300px;"  src="https://images.unsplash.com/photo-1519766304817-4f37bda74a26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+                    </div>
+                </div><hr>
+            </div>
+        </div>
+</div>
+     
+
+<footer class="footer py-5 mt-auto mt-10" style="background-color: #8F1515;">
+    <div class="container" style="color: aliceblue;">
+        <div class="row">
+            <div class="col-6">
+                <h3>University Of South India</h3>
+                <div id="pic"></div>
+                <!-- <img src="/stylesheets/USI.png" type="text/css" style="width: 200px;height: 200px;display: inline-block;"> -->
+            </div>
+            <div class="col-6">
+                <h5 class="mb-4" style="color: aliceblue;">About USI</h5>
+                <p>Contact USI</p>
+                <p>About the University</p>
+                <p>News</p>
+                <p>Events</p>
+                <p>Careers</p>
+            </div>
+        </div><hr>
+        <div class="container text-center">
+            <p class="text-muted mb-0 mt-5">&copy;USI</p>     
+        </div>
+    </div>
+</footer> 
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
